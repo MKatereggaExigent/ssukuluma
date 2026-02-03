@@ -7,7 +7,7 @@ set -e
 
 # Configuration - Update these for your setup
 CAPROVER_NAME="aidoc-server"           # Your CapRover server name
-CAPROVER_APP="ssukuluma"               # CapRover app name
+CAPROVER_APP="ssukulumasolutions"      # CapRover app name
 
 echo ""
 echo "🚀 Ssukuluma Solutions CapRover Deployment"
