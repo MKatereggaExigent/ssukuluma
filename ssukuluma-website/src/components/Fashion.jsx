@@ -50,7 +50,7 @@ const Fashion = () => {
       <div className="floating-orb w-80 h-80 bg-purple-500/30 top-20 -left-40" style={{ animationDelay: '1s' }} />
       <div className="floating-orb w-64 h-64 bg-pink-500/30 bottom-20 -right-32" style={{ animationDelay: '4s' }} />
       
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

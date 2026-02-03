@@ -16,7 +16,7 @@ const About = () => {
       {/* Background */}
       <div className="floating-orb w-96 h-96 bg-amber-500/20 -bottom-48 -left-48" style={{ animationDelay: '2s' }} />
       
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
           <motion.div

@@ -68,7 +68,7 @@ const Services = () => {
       <div className="floating-orb w-72 h-72 bg-amber-500/30 -top-20 -right-20" />
       <div className="floating-orb w-56 h-56 bg-emerald-500/30 bottom-40 -left-20" style={{ animationDelay: '3s' }} />
       
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

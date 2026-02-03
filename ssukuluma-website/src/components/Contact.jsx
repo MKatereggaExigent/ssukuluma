@@ -39,7 +39,7 @@ const Contact = () => {
       <div className="floating-orb w-80 h-80 bg-amber-500/20 top-20 -right-40" style={{ animationDelay: '1s' }} />
       <div className="floating-orb w-64 h-64 bg-purple-500/20 bottom-20 -left-32" style={{ animationDelay: '3s' }} />
       
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -68,7 +68,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="glass-card p-8 md:p-10"
+            className="glass-card p-5 sm:p-8 md:p-10"
           >
             <h3 className="text-2xl font-semibold mb-6">Send Us a Message</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -145,19 +145,19 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="space-y-6"
           >
-            <div className="glass-card p-8">
-              <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
-              <div className="space-y-5">
+            <div className="glass-card p-5 sm:p-8">
+              <h3 className="text-xl sm:text-2xl font-semibold mb-6">Contact Information</h3>
+              <div className="space-y-4 sm:space-y-5">
                 {contactInfo.map((item, index) => (
                   <a key={index} href={item.href} target={item.href.startsWith('http') ? '_blank' : '_self'}
-                    className="flex items-start gap-4 group"
+                    className="flex items-start gap-3 sm:gap-4 group"
                   >
-                    <div className="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center flex-shrink-0 group-hover:bg-amber-500/20 transition-colors">
-                      <item.icon className="w-5 h-5 text-amber-500" />
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-amber-500/10 flex items-center justify-center flex-shrink-0 group-hover:bg-amber-500/20 transition-colors">
+                      <item.icon className="w-4 h-4 sm:w-5 sm:h-5 text-amber-500" />
                     </div>
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <p className="text-sm text-gray-400">{item.label}</p>
-                      <p className="text-white group-hover:text-amber-400 transition-colors">{item.value}</p>
+                      <p className="text-white group-hover:text-amber-400 transition-colors text-sm sm:text-base break-words">{item.value}</p>
                     </div>
                   </a>
                 ))}
